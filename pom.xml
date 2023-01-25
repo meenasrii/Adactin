@@ -48,14 +48,39 @@
     <artifactId>selenium-java</artifactId>
     <version>4.7.2</version>
 </dependency>
-<build>
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.9</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.vimalselvam/cucumber-extentsreport -->
+<dependency>
+    <groupId>com.vimalselvam</groupId>
+    <artifactId>cucumber-extentsreport</artifactId>
+    <version>3.1.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
+<dependency>
+    <groupId>tech.grasshopper</groupId>
+    <artifactId>extentreports-cucumber7-adapter</artifactId>
+    <version>1.9.2</version>
+</dependency>
+<dependency>
+  <groupId>org.projectlombok</groupId>
+  <artifactId>lombok</artifactId>
+  <version>1.18.22</version>
+</dependency>
+
+ </dependencies>
+  <build>
 	<plugins>
 	<plugin>
 	<groupId>org.apache.maven.plugins</groupId>
 	<artifactId>maven-compiler-plugin</artifactId>
 	<version>3.0</version>
 	<configuration>
-¬	<source>1.8</source>
+	<source>1.8</source>
 	<target>1.8</target>
 	</configuration>
 	</plugin>
@@ -65,14 +90,11 @@
 <version>2.22.1</version>
 <configuration>
 <includes>
-<include>**/*Runner.java</include>
+<include>**/*Runnerclass.java</include>
 </includes>
 <testFailureIgnore>true</testFailureIgnore>
 </configuration>
 </plugin>
 </plugins>
 </build>
-
-
-  </dependencies>
 </project>
