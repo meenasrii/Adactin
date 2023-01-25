@@ -1,4 +1,4 @@
-package Hooks;
+ package Hooks;
 
 
 
@@ -14,7 +14,7 @@ import io.cucumber.java.Scenario;
 public class Hooks extends Baseclass {
 	@Before
 	public void BeforeHooks() {
-		System.out.println("Am before hooks");
+		System.out.println("Am beefore hooks");
 
 	}
 	@After
